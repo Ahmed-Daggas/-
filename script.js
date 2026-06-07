@@ -79,21 +79,29 @@ const standingsData = {
 
   sport1: [
     // { rank, name, p=لعب, w=فاز, d=تعادل, l=خسر, gf=للـ, ga=عليه, pts=نقاط }
-    { rank: 1, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
-    { rank: 2, name: 'المدرسة الثانية', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
-    { rank: 3, name: 'المدرسة الثالثة', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
-    { rank: 4, name: 'المدرسة الرابعة', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 1, name: 'KBDH',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 2, name: 'MSK', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 3, name: 'KINDERS', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 4, name: 'AOD', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 5, name: 'RYKH7LD',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 6, name: 'LM',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 7, name: 'KHALIHA 3ALA ALLAH',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 8, name: 'NOT OVER YET',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 9, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 10, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 11, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 12, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 13, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 14, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 15, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 16, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
+    { rank: 17, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
   ],
 
   sport2: [
     { rank: 1, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
     { rank: 2, name: 'المدرسة الثانية', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
     { rank: 3, name: 'المدرسة الثالثة', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
-  ],
-
-  sport3: [
-    { rank: 1, name: 'المدرسة الأولى',  p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
-    { rank: 2, name: 'المدرسة الثانية', p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 },
   ],
 
 };
