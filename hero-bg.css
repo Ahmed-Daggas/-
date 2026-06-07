@@ -9,7 +9,7 @@ body {
 
 /* الهيرو يحتفظ بتدرجه الأصلي */
 .hero {
-  background: linear-gradient(135deg, #0f2447 0%, #1a3a6b 50%, #1e4d8c 100%);
+  background: linear-gradient(135deg, #0f2447 0%, #1a3a6b 0%, #1e4d8c 0%);
 }
 
 /* باقي الأقسام — طبقة شفافة فوق الصورة */
