@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>البطولات المدرسية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-icon">🏆</div>
+      <!-- غير اسم الموقع هنا -->
+      <span class="logo-text">البطولات <strong>المدرسية</strong></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+      <li><a href="#tournaments" class="nav-link">البطولات</a></li>
+      <li><a href="#standings" class="nav-link">الترتيب</a></li>
+      <li><a href="#matches" class="nav-link">المباريات</a></li>
+      <li><a href="#news" class="nav-link">الأخبار</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" onclick="closeMobileMenu()">الرئيسية</a></li>
+    <li><a href="#tournaments" onclick="closeMobileMenu()">البطولات</a></li>
+    <li><a href="#standings" onclick="closeMobileMenu()">الترتيب</a></li>
+    <li><a href="#matches" onclick="closeMobileMenu()">المباريات</a></li>
+    <li><a href="#news" onclick="closeMobileMenu()">الأخبار</a></li>
+  </ul>
+</div>
+
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+  </div>
+  <div class="hero-content">
+    <!-- الشارة فوق العنوان -->
+    <div class="hero-badge">🏅 الموسم 0000 – 0000</div>
+
+    <!-- العنوان الرئيسي -->
+    <h1 class="hero-title">
+      اسم البطولة<br>
+      <span class="accent">هنا</span>
+    </h1>
+
+    <!-- وصف مختصر -->
+    <p class="hero-sub">اكتب وصفاً مختصراً للموقع هنا</p>
+
+    <!-- أزرار -->
+    <div class="hero-btns">
+      <a href="#tournaments" class="btn btn-primary">استعرض البطولات</a>
+      <a href="#matches" class="btn btn-outline">المباريات القادمة</a>
+    </div>
+
+    <!-- إحصائيات سريعة -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num" data-target="0">0</span>
+        <span class="stat-label">مدرسة مشاركة</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="0">0</span>
+        <span class="stat-label">رياضات</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="0">0</span>
+        <span class="stat-label">مباراة منجزة</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارد جانبي -->
+  <div class="hero-visual">
+    <div class="trophy-card">
+      <div class="trophy-icon">🏆</div>
+      <div class="trophy-info">
+        <span class="trophy-label">بطل الموسم الماضي</span>
+        <strong>اسم المدرسة</strong>
+        <span class="trophy-sport">الرياضة</span>
+      </div>
+    </div>
+    <div class="live-badge">🔴 مباشر الآن</div>
+    <div class="live-match-card">
+      <span class="match-sport">الرياضة</span>
+      <div class="match-teams">
+        <div class="team-side">
+          <div class="team-logo-sm">🏫</div>
+          <span>الفريق أ</span>
+        </div>
+        <div class="score-box">
+          <span class="score">0</span>
+          <span class="sep">-</span>
+          <span class="score">0</span>
+        </div>
+        <div class="team-side">
+          <div class="team-logo-sm">🏫</div>
+          <span>الفريق ب</span>
+        </div>
+      </div>
+      <div class="match-time">الشوط الأول · 00:00</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== TOURNAMENTS ===== -->
+<section class="section" id="tournaments">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">الموسم الحالي</span>
+      <h2 class="section-title">البطولات الجارية</h2>
+      <p class="section-sub">تابع جميع البطولات الرياضية بين المدارس</p>
+    </div>
+
+    <div class="tournaments-grid">
+
+      <!--
+        === بطاقة بطولة ===
+        tc-badge: "جاري" / "قادم" / "انتهى"
+        progress-fill width: نسبة التقدم مثلاً 65%
+        للبطولة المميزة: أضف class="tournament-card featured"
+      -->
+
+      <!-- بطولة 1 -->
+      <div class="tournament-card featured">
+        <div class="tc-header">
+          <div class="tc-sport-icon">⚽</div>
+          <div class="tc-badge">جاري</div>
+        </div>
+        <h3>اسم البطولة</h3>
+        <p>وصف مختصر للبطولة</p>
+        <div class="tc-meta">
+          <div class="meta-item"><span>🏫</span> 0 مدرسة</div>
+          <div class="meta-item"><span>📅</span> ينتهي 00 شهر</div>
+        </div>
+        <div class="tc-progress">
+          <div class="progress-label"><span>التقدم</span><span>0%</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+        <a href="#standings" class="tc-btn">عرض الترتيب ←</a>
+      </div>
+
+      <!-- بطولة 2 -->
+      <div class="tournament-card">
+        <div class="tc-header">
+          <div class="tc-sport-icon">🏀</div>
+          <div class="tc-badge running">جاري</div>
+        </div>
+        <h3>اسم البطولة</h3>
+        <p>وصف مختصر للبطولة</p>
+        <div class="tc-meta">
+          <div class="meta-item"><span>🏫</span> 0 مدارس</div>
+          <div class="meta-item"><span>📅</span> ينتهي 00 شهر</div>
+        </div>
+        <div class="tc-progress">
+          <div class="progress-label"><span>التقدم</span><span>0%</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+        <a href="#standings" class="tc-btn">عرض الترتيب ←</a>
+      </div>
+
+      <!-- بطولة 3 -->
+      <div class="tournament-card">
+        <div class="tc-header">
+          <div class="tc-sport-icon">🏐</div>
+          <div class="tc-badge soon">قادم</div>
+        </div>
+        <h3>اسم البطولة</h3>
+        <p>وصف مختصر للبطولة</p>
+        <div class="tc-meta">
+          <div class="meta-item"><span>🏫</span> 0 مدارس</div>
+          <div class="meta-item"><span>📅</span> يبدأ 00 شهر</div>
+        </div>
+        <div class="tc-progress">
+          <div class="progress-label"><span>التسجيل</span><span>مفتوح</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:0%; background:var(--accent2)"></div></div>
+        </div>
+        <a href="#" class="tc-btn">التسجيل ←</a>
+      </div>
+
+      <!-- بطولة 4 -->
+      <div class="tournament-card">
+        <div class="tc-header">
+          <div class="tc-sport-icon">🏃</div>
+          <div class="tc-badge ended">انتهى</div>
+        </div>
+        <h3>اسم البطولة</h3>
+        <p>وصف مختصر للبطولة</p>
+        <div class="tc-meta">
+          <div class="meta-item"><span>🏫</span> 0 مدارس</div>
+          <div class="meta-item"><span>📅</span> انتهى 00 شهر</div>
+        </div>
+        <div class="tc-progress">
+          <div class="progress-label"><span>البطل</span><span>🏆 اسم المدرسة</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:100%; background:#22c55e"></div></div>
+        </div>
+        <a href="#" class="tc-btn">النتائج النهائية ←</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== STANDINGS ===== -->
+<section class="section dark-section" id="standings">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">الترتيب الحالي</span>
+      <h2 class="section-title">جدول الترتيب</h2>
+      <p class="section-sub">ترتيب الفرق في البطولة</p>
+    </div>
+
+    <div class="standings-wrapper">
+      <!--
+        === أزرار فلترة الترتيب ===
+        غير النص والـ onclick لكل رياضة
+        البيانات تُعدَّل في script.js في قسم standingsData
+      -->
+      <div class="standings-filters">
+        <button class="filter-btn active" onclick="filterStandings('sport1', event)">⚽ الرياضة 1</button>
+        <button class="filter-btn" onclick="filterStandings('sport2', event)">🏀 الرياضة 2</button>
+        <button class="filter-btn" onclick="filterStandings('sport3', event)">🏃 الرياضة 3</button>
+      </div>
+
+      <div class="standings-table-wrap">
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>المدرسة</th>
+              <th>لعب</th>
+              <th>فاز</th>
+              <th>تعادل</th>
+              <th>خسر</th>
+              <th>للـ</th>
+              <th>عليه</th>
+              <th>النقاط</th>
+            </tr>
+          </thead>
+          <tbody id="standingsBody">
+            <!-- تُملأ تلقائياً من script.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== MATCHES ===== -->
+<section class="section" id="matches">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">الجدول الزمني</span>
+      <h2 class="section-title">المباريات</h2>
+    </div>
+
+    <div class="matches-tabs">
+      <button class="match-tab active" onclick="switchTab('upcoming', this)">القادمة</button>
+      <button class="match-tab" onclick="switchTab('results', this)">النتائج</button>
+    </div>
+
+    <!-- المباريات القادمة -->
+    <div id="upcoming" class="matches-list active-tab">
+
+      <!--
+        === مباراة عادية ===
+        غير التاريخ، الرياضة، الفرق، الوقت، المكان
+        class للرياضة: football / basketball / athletics (أو أضف نوعاً جديداً في CSS)
+      -->
+      <div class="match-card">
+        <div class="match-date">
+          <div class="date-day">00</div>
+          <div class="date-month">شهر</div>
+        </div>
+        <div class="match-info">
+          <span class="match-sport-tag football">⚽ الرياضة</span>
+          <div class="match-vs">
+            <div class="team-name">مدرسة أ</div>
+            <div class="vs-badge">VS</div>
+            <div class="team-name">مدرسة ب</div>
+          </div>
+          <div class="match-details">
+            <span>🕐 00:00 ص/م</span>
+            <span>📍 المكان</span>
+          </div>
+        </div>
+        <div class="match-action">
+          <span class="upcoming-label">قادم</span>
+        </div>
+      </div>
+
+      <!-- مباراة مباشرة — احذف هذه البطاقة إن لم تكن هناك مباراة حية -->
+      <div class="match-card live-match">
+        <div class="match-date">
+          <div class="date-day">🔴</div>
+          <div class="date-month">مباشر</div>
+        </div>
+        <div class="match-info">
+          <span class="match-sport-tag basketball">🏀 الرياضة</span>
+          <div class="match-vs">
+            <div class="team-name">مدرسة أ</div>
+            <div class="vs-badge live-score">0 - 0</div>
+            <div class="team-name">مدرسة ب</div>
+          </div>
+          <div class="match-details">
+            <span>الشوط الأول</span>
+            <span>📍 المكان</span>
+          </div>
+        </div>
+        <div class="match-action">
+          <span class="live-label">🔴 مباشر</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- نتائج المباريات -->
+    <div id="results" class="matches-list">
+
+      <!--
+        === نتيجة مباراة ===
+        أضف class="winner" للفريق الفائز
+      -->
+      <div class="match-card result">
+        <div class="match-date">
+          <div class="date-day">00</div>
+          <div class="date-month">شهر</div>
+        </div>
+        <div class="match-info">
+          <span class="match-sport-tag football">⚽ الرياضة</span>
+          <div class="match-vs">
+            <div class="team-name winner">مدرسة أ (فائز)</div>
+            <div class="vs-badge result-score">0 - 0</div>
+            <div class="team-name">مدرسة ب</div>
+          </div>
+        </div>
+        <div class="match-action">
+          <span class="ended-label">انتهى</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== NEWS ===== -->
+<section class="section news-section" id="news">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">آخر المستجدات</span>
+      <h2 class="section-title">الأخبار</h2>
+    </div>
+    <div class="news-grid">
+
+      <!-- خبر كبير (يمتد صفين) -->
+      <div class="news-card big">
+        <div class="news-img big-img">🏆</div>
+        <div class="news-body">
+          <span class="news-tag">بطولات</span>
+          <h3>عنوان الخبر الرئيسي هنا</h3>
+          <p>اكتب تفاصيل الخبر هنا. يمكنك إضافة أكثر من سطر لشرح ما حدث في المباراة أو البطولة.</p>
+          <div class="news-meta"><span>📅 00 شهر 0000</span></div>
+        </div>
+      </div>
+
+      <!-- خبر 2 -->
+      <div class="news-card">
+        <div class="news-img">🏀</div>
+        <div class="news-body">
+          <span class="news-tag">كرة السلة</span>
+          <h3>عنوان الخبر هنا</h3>
+          <p>وصف مختصر للخبر.</p>
+          <div class="news-meta"><span>📅 00 شهر 0000</span></div>
+        </div>
+      </div>
+
+      <!-- خبر 3 -->
+      <div class="news-card">
+        <div class="news-img">🏃</div>
+        <div class="news-body">
+          <span class="news-tag">ألعاب القوى</span>
+          <h3>عنوان الخبر هنا</h3>
+          <p>وصف مختصر للخبر.</p>
+          <div class="news-meta"><span>📅 00 شهر 0000</span></div>
+        </div>
+      </div>
+
+      <!-- خبر 4 -->
+      <div class="news-card">
+        <div class="news-img">📋</div>
+        <div class="news-body">
+          <span class="news-tag">إعلانات</span>
+          <h3>عنوان الخبر هنا</h3>
+          <p>وصف مختصر للخبر.</p>
+          <div class="news-meta"><span>📅 00 شهر 0000</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <!-- غير اسم واللوغو -->
+      <div class="footer-logo">🏆 البطولات المدرسية</div>
+      <p>وصف مختصر عن المنصة أو المؤسسة المشرفة.</p>
+    </div>
+    <div class="footer-links">
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#tournaments">البطولات</a></li>
+        <li><a href="#standings">الترتيب</a></li>
+        <li><a href="#matches">المباريات</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>الرياضات</h4>
+      <ul>
+        <!-- أضف أو احذف حسب الرياضات المتاحة -->
+        <li><a href="#">⚽ رياضة 1</a></li>
+        <li><a href="#">🏀 رياضة 2</a></li>
+        <li><a href="#">🏐 رياضة 3</a></li>
+        <li><a href="#">🏃 رياضة 4</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>تواصل معنا</h4>
+      <!-- غير معلومات التواصل -->
+      <p>📧 email@example.com</p>
+      <p>📞 000-000-0000</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <!-- غير السنة واسم المنصة -->
+    <p>© 0000 البطولات المدرسية — جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
