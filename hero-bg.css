@@ -1,0 +1,19 @@
+/* ============================================================
+   hero-bg.css — خلفية الصورة لكامل الموقع ماعدا الهيرو
+   ============================================================ */
+
+body {
+  background:
+    url('IMG_0669.png') center top / cover fixed no-repeat;
+}
+
+/* الهيرو يحتفظ بتدرجه الأصلي */
+.hero {
+  background: linear-gradient(135deg, #0f2447 0%, #1a3a6b 50%, #1e4d8c 100%);
+}
+
+/* باقي الأقسام — طبقة شفافة فوق الصورة */
+.section      { background: rgba(248, 250, 252, 0.90); }
+.dark-section { background: rgba(15, 36, 71, 0.92); }
+.news-section { background: rgba(238, 242, 247, 0.90); }
+.footer       { background: rgba(8, 15, 35, 0.96); }
